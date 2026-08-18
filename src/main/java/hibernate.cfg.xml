@@ -1,0 +1,16 @@
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <proprty name ="connection.driver_class">com.mysql.jdbc.Driver</proprty>
+        <proprty name="connection.url">jdbc:mysql://localhost:3306/myhiber</proprty>
+        <proprty name="connection.username">root</proprty>
+        <proprty name="connection.password">Rudra@123</proprty>
+        <proprty name="dialect">org.hibernate.dialect.MySQLDialect</proprty>
+        <proprty name="hbm2ddl.auto">update</proprty> //if table is not present then it will craete that table and if present then it will not create
+        <proprty name="show_sql">true</proprty> // it will show the queries created by hibernate
+
+
+    </session-factory>
+</hibernate-configuration>
