@@ -18,11 +18,21 @@
 
         <!-- If table is not present, Hibernate will automatically create/update it -->
         <property name="hbm2ddl.auto">update</property>
-
         <!-- Shows SQL queries in console -->
         <property name="show_sql">true</property>
+        <property name="format_sql"></property>
         
         <mapping class="com.rudra.Student"/>
+        <mapping class="com.rudra.Address"/>
+
+        <mapping class="oneToone.Question"/>
+        <mapping class="oneToone.Answer"/>
+
+        <mapping class="OneToMany.Question1"/>
+        <mapping class="OneToMany.Answer1"/>
+
+        <mapping class="ManyToMany.Project"/>
+        <mapping class="ManyToMany.Employee"/>
 
     </session-factory>
 
